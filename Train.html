@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Time Train</title>
+    <link rel="shortcut icon" href="car logo.png" >
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        body,html{
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.navbar{
+    background-color: rgb(227, 234, 232);
+  padding: 8px 16px;
+  
+  
+}
+.navitem,.navbar-nav{
+    display: inline;
+}
+.navbar-nav{
+  
+    border-top: 3px solid green;
+    
+}
+
+.navlink{
+    margin-left: 40px;
+transition: color 0.5s;
+}
+.navlink:hover{
+    color: rgb(17, 242, 51);
+    
+}
+.navlink,.navbarbrand{
+    text-decoration: none;
+
+    font-size: 20px;
+    text-transform: uppercase;
+    color: black;
+}
+.navbarbrand{
+    font-size: 25px;
+   letter-spacing: 1px;
+   margin-left: 60px;
+}
+.navbar img{
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    position: relative;
+    top: 10px;
+}
+.navbarbrand span{
+    font-size: 40px;
+    color: rgb(255, 128, 0)!important;
+}
+.banner{
+    height: 650px;
+    background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)),url(intro.webp);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 100% 100%;
+    
+   
+}
+.bannercard{
+    background-color: rgba(0,0,0,0.4);
+    color: whitesmoke;
+    width: 45%;
+    border-top: 3px solid rgb(9, 201, 9);
+    margin:150px auto;padding: 20px;
+    font-size: 16px;
+    position: relative;
+    top: -70px;
+    left: 20px;
+    text-align: justify;
+  
+
+}
+.bnbtn{
+    border: 2px solid green;
+    padding: 10px 18px;
+    border-radius: 10%;
+    background-color: transparent;
+    color: antiquewhite;
+    margin-left: 230px;
+    transition:background-color 0.5s;
+}
+.bnbtn:hover{
+    background-color: rgb(7, 192, 35);
+}
+.imagesection img{
+    height: 200px;
+    width: 330px;
+    display: inline-block
+}
+.contact{
+    height: 10px;
+    width: 500px;
+    position: absolute;
+   top: 20px;
+   left: 200px;
+   
+   }
+   .contact a{
+    color: black;
+   }
+   .mail{
+    height: 10px;
+    width: 500px;
+    position: relative;
+    top: -70px;
+    left: 400px;
+   }
+   .mail a{
+    color: black;
+    text-decoration: none;
+   }
+   .icons{
+    position: absolute;
+    top: 20px;
+    left: 900px;
+    padding-left: 40px;
+    word-spacing: 50px;
+   }
+   .bannercard a{
+   
+    border-radius: 5px;
+    position: relative;
+    top: 120px;
+    left: -140px;
+    font-size: 22px;
+    background-color: black;
+    color: antiquewhite;
+    text-decoration: none;
+   }
+   .bannercard a:hover{
+    color: red;
+   }
+   .home{
+    height: 500px;
+    width: 100%;
+    background-color: antiquewhite;
+    margin-top: -22px;
+   }
+   .inerhome1{
+    height: 300px;
+    width: 600px;
+   }
+   .inerhome2{
+    height: 300px;
+    width: 500px;
+    position: relative;
+    top: -300px;
+    left: 820px;
+   }
+   .inerhome2 p{
+   text-align: justify;
+   font-size: 20px;
+   }
+   .inlist{
+    font-size: 20px;
+   }
+   .inerhome1 h1{
+    font-size: 35px;
+   }
+   .inerhome1 h2{
+    font-size: 25px;
+    position: relative;
+    top: 120px;
+   }
+   .jon{
+    height: 550px;
+    width: 100%;
+   }
+   .jon p{
+    font-size: 20px;
+    text-align: justify;
+   }
+   .rentals{
+    height: 500px;
+    width: 100%;
+    background-color: antiquewhite;
+   }
+   .rent1{
+    height: 400px;
+    width: 400px;
+    display: inline-block;
+   }
+   .rent2{
+    height: 400px;
+    width: 600px;
+    display: inline-block;
+    position: relative;
+    left: 300px;
+    text-align: justify;
+    font-size: 18px;
+   }
+  .rentals h1{
+    font-size: 25px;
+    text-align: center;
+  }
+  .rent1 h1{
+    position: relative;
+    top: -150px;
+  }
+  .rent1 h2{
+    position: relative;
+    top: -100px;
+  }
+  .rent1 button{
+    height: 50px;
+    width: 150px;
+    background-color: aqua;
+    color: red;
+    position: relative;
+    left: 150px;
+    font-size: 15px;
+  }
+  .inventory {
+    height: 550px;
+    width: 100%;
+    display: inline-block;
+    background-color: black;
+    color: red;
+  }
+  .inventory img{
+    height: 200px;
+    width: 250px;
+    margin: 8px;
+    
+  }.inventory img:hover{
+    transform: scale(1.2);
+  }
+  .contactus{
+    height: 500px;
+    width: 100%;
+    background-color: beige;
+  }
+  .cont{
+    height: 300px;
+    width: 50%;
+  }
+  .cont h1{
+    font-size: 25px;
+
+  }
+  .cont input{
+    height: 60px;
+    width: 250px;
+    display: block;
+    margin: 50px;
+  }
+  .cont h2{
+    position: relative;
+    top: 40px;
+    color: brown;
+  }
+  .contactus img{
+    height: 300px;
+    width: 500px;
+    position: relative;
+    left: 800px;
+    top: -200px;
+  }
+  .cont button{
+    height: 50px;
+    width: 200px;
+    position: relative;
+    top: -80px;
+    left: 350px;
+    font-size: 30px;
+  }
+  .cont  button:hover{
+    color: red;
+  }
+  .last{
+    height: 200px;
+    width: 100%;
+  }
+  .call{
+    height: 150px;
+    width: 150px;
+  }
+  .call h2{
+font-size: 15px;
+position: relative;
+top: -90px;
+left: 70px;
+  }
+  .call h1{
+position: relative;
+left: 80px;
+top: -70px;
+  }
+  .call p{
+    position: relative;
+    top: 30px;
+    size: 80px;
+  }
+  .vl {
+  border-left: 6px solid green;
+  height: 100px;
+  position: relative;
+  left: 220px;
+  top: -750px;
+}
+.map{
+    height: 150px;
+    width: 150px;
+  }
+  .map h2{
+font-size: 15px;
+position: relative;
+top: -250px;
+left: 300px;
+  }
+  .map h1{
+position: relative;
+left: 300px;
+top: -230px;
+  }
+  .map p{
+    position: relative;
+    top: -140px;
+    left: 250px;
+  }
+  .v2 {
+  border-left: 6px solid green;
+  height: 100px;
+  position: relative;
+  left:450px;
+  top: -850px;
+}
+.mail2{
+    height: 150px;
+    width: 150px;
+    font-size: 15px;
+  }
+  .mail2 h2{
+font-size: 15px;
+position: relative;
+top: -400px;
+left: 600px;
+
+  }
+  .mail2 h1{
+position: relative;
+top: -390px;
+left: 600px;
+
+  }
+  .mail2 p{
+    position: relative;
+    top: -300px;
+    left: 500px;
+  }
+  .v3 {
+  border-left: 6px solid green;
+  height: 100px;
+  position: relative;
+  left:880px;
+  top: -950px;
+}
+.time{
+  height: 150px;
+    width: 150px;
+}
+.time p{
+  position: relative;
+  top: -460px;
+  left: 900px;
+}
+.time h1{
+  position: relative;
+  top:-550px ;
+  left: 1000px;
+}
+.time pre{
+  position: relative;
+  top:-620px ;
+  left: 1110px;
+  font-size: 18px;
+}
+marquee{
+  font-size: 25px;
+  color: red;
+}
+
+    </style>
+</head>
+<body>
+    <div class="banner">
+    <nav class="navbar">
+        <a href="" class="navbarbrand"><span>O</span>oty Train</a>
+
+        <ul class="navbar-nav">
+            <li  class="navitem"><a href="#home"class="navlink">HOME</a></li>
+            <li  class="navitem"><a href="#service"class="navlink">SERVICES</a></li>
+            <li  class="navitem"><a href="#rent"class="navlink">RENTALS</a></li>
+            <li class="navitem"><a href=""class="navlink">INVENTORY</a></li>
+            <img src="intro.webp" alt="" >
+            <li class="navitem"><a href=""class="navlink">BOOKINGS</a></li>
+            <li class="navitem"><a href=""class="navlink">ABOUT US</a></li>
+            
+            <li class="navitem"><a href=""class="navlink">CONTACT</a></li>
+            <li class="navitem"><a href="login.html"class="navlink">LOGIN</a></li>
+        </ul>
+        <!-- <div class="contact">
+            <a href=""><i class="fa fa-phone" style="font-size:20px">+91 94487145</i></a>
+        </div>
+        <div class="mail">
+            <a href=""><i class="fa fa-envelope" style="font-size:22px"></i>compnay@gmail.com</i></a> -->
+
+        </div>
+        <!-- <div class="icons">
+            <i class="fa fa-instagram" style="font-size:28px;color:red"></i>
+            <i class="fa fa-facebook-f" style="font-size:28px;color:blue"></i>
+            <i class="fa fa-youtube-play" style="font-size:28px;color:red"></i>
+            <i class="fa fa-twitter" style="font-size:28px;color: blue;"></i>
+        </div> -->
+    </nav>
+
+    
+    <!-- <div class="bannercard">
+        <h1>Vintage cars models</h1>
+        <p>The vintage era in the automotive world was a time of transition. The car started off in 1919 as still something of a rarity, and ended up, in 1930, well on the way towards ubiquity. In fact, automobile production at the end of this period was not matched again until the 1950s. In the intervening years, most industrialized countries built nationwide road systems with the result that, towards the end of the period, the ability to negotiate unpaved roads was no longer a prime consideration of automotive design.</p>
+        <button class="bnbtn">Read More</button>
+        <a href="carcollections.html" target="_blank">View Collection</a>
+    </div> -->
+</div>
+<div class="home" id="home">
+    <div class="inerhome1">
+    <h1 >Welcome to Ooty Hills</h1>
+    <h2>Where passion meets excellence.</h2>
+</div>
+<div class="inerhome2">
+<p> Nilgiri Mountain Railway, also known as Toy Train in Ooty, is one of the key attractions of the popular hill station Ooty. Such is the train's popularity and history that it was declared as a World Heritage Site by UNESCO in 2005!</p>
+<ul class="inlist">
+    <li>Ooty Lake</li>
+    <li>Ooty Botanical Gardens: One of the best places to visit in Ooty</li>
+    <li>Ooty Rose Gardens</li>
+    <li>Thread Garden</li>
+    <li>Doddabetta Peak</li>
+</ul>
+</div>
+
+</div>
+<div class="jon" id="service">
+        <h1>SERVICES</h1>
+        <div class="imagesection">
+            <img src="one.webp" alt="">
+            <img src="two.jpg" alt="">
+            <img src="three.jpg" alt="">
+            <img src="four.webp" alt="">
+        </div>
+    <div>
+        <p>In 1854, plans were made to build a mountain railway from Mettupalayam to the Nilgiri Hills. However, it took the decision-makers 45 years to cut through the bureaucratic red tape and complete the construction. The line was completed and opened for traffic in June 1899. It was operated first by the Madras Railway under an agreement with the government.The steam locomotives are marshalled at the downhill (Mettupalayam) end of the train. The average gradient in this rack section is 1 in 24.5 (4.08%), with a maximum of 1 in 12 (8.33%). Between Coonoor and Udagamandalam, the train is operated by a YDM4 diesel locomotive using conventional rail adhesion principles. On this section, the locomotive is always at the Coonoor end of the train as although the line is not steep enough to need a rack rail, the ruling gradient out of Coonoor is steep at 1 in 25 (4%).
+
+          Southern Railway carries out the majority of the locomotive repairs at the Coonoor shed but has rebuilt many of the steam locomotives at the Golden Rock Workshops. Many carriage repairs take place at Mettupalayam. Like the locomotives, major work on the carriages takes place at one of the larger railway workshops.</p>
+    </div>
+    </div>
+    <!-- <div class="rentals" id="rent">
+        <h1>VINTAGE CAR RENTALS FOR MOVIES, PHOTOSHOOTS AND MORE</h1>
+        <div class="rent1">
+            <h1>Rentals For Movies, Photoshoots, Commercials and More!</h1>
+            <h2>Contact us today for a large selection of rental vehicles for your projects.</h2>
+            <button>Contact us Today</button>
+        </div>
+        <div class="rent2">
+            <p>From movies and film, to photoshoots, commercials, sitcoms, TV, series, ad campaigns, parties and more, we've got some of the most unique vehicles available in Southern California and other locations!
+
+                Our fleet includes classic cars and trucks, exotics, luxury vehicles, and more from all eras.  
+                
+                We have a large in-house fleet with over 250+ vehicles located at our warehouse facility in Los Angeles, CA and can transport our vehicles anywhere! We also store additional vehicles from our fleet across the United States with vehicles currently in Arizona, Nevada, Texas, Florida, Virginia Connecticut, New York, Maine, and Illinois.
+                
+                Our rental vehicle services include transportation, custom builds, consultation, design, engineering and more!
+                
+                We make rentals as easy, painless and as quick as possible.  Have a particular car in mind?  It's almost a sure thing that we'll have it, and if we don't, we can take the headache away from you and locate it for you.  Our vehicles have been featured in major movies, luxury brand photoshoots and more. 
+                
+                Check out some of our recent work below!</p>
+        </div>
+    </div> -->
+<div class="inventory">
+    <h1>FEATURED INVENTORY</h1>
+    <img src="10dout.jpg" alt="">
+   
+    <img src="1dout.jpg" alt="">
+    <img src="2dout.webp" alt="">
+    <img src="3dout.png" alt="">
+    <img src="4dout.webp" alt="">
+        <img src="5dout.jpg" alt="">
+        <img src="6dout.jpg" alt="">
+        <img src="7dout.jpg" alt="">
+        <img src="8dout.jpg" alt="">
+        <img src="9dout.jpg" alt="">
+<!-- </div>
+<div class="contactus"> 
+<div class="cont">
+<h1>SIGN UP TO RECEIVE OUR EMAIL NEWSLETTER</h1>
+<h2>And stay up to date with all the latest inventory, promotions, auctions, videos, and more!</h2>
+    <input type="textbox" placeholder="FirstName">
+    <input type="textbox" placeholder="LastName">
+    <input type="textbox" placeholder="email" required>
+    <button>subscribe</button>
+
+</div>
+<img src="intro.webp" alt="">
+</div> -->
+<div class="last">
+    <div class="call">
+    <p><i class="fa fa-phone" style="font-size:75px;color:black"></i></p>
+    <h1>Phone</h1>
+    <h2>+919448754984</h2>
+</div>
+<div class="map">
+    <p><i class="fa fa-map-marker" style="font-size:75px;color:black"></i></p>
+
+    <h1>Location</h1>
+    <h2>Basvanagudi</h2>
+</div>
+<div class="mail2">
+    <p><i class="fa fa-envelope" style="font-size:70px;color:black"></i></p>
+
+
+    <h1>Mail</h1>
+    <h2>OotytrainChill@gmail.com</h2>
+</div>
+<div class="time">
+  <p><i class="fa fa-clock-o" style="font-size:75px;color:black"></i></p>
+
+
+  <h1>Timings</h1>
+  <pre>
+    Mon-Fri  9am-6pm
+    saturday 9am-3pm
+    sunday also open closed
+  </pre>
+  <div class="vl"></div>
+<div class="v2"></div>
+<div class="v3"></div>
+</div>
+</div>
+<!-- <marquee behavior="" direction="">Thank You Visit Again &hearts;</marquee> -->
+</body>
+</html>
